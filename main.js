@@ -74,15 +74,7 @@ function setView(viewKey) {
 
   // 更新 Hero 區塊文案
   if (heroBadgeText) heroBadgeText.textContent = config.badge;
-  if (heroHeadline) {
-    if (viewKey === 'med') {
-      heroHeadline.textContent = "Medical AI × Clinical Decision Support × Healthcare Systems";
-    } else if (viewKey === 'cs') {
-      heroHeadline.textContent = "Algorithm Optimization × Multi-modal Edge AI × Intelligent Systems";
-    } else {
-      heroHeadline.textContent = "Medical AI × Data Analysis × Intelligent Systems";
-    }
-  }
+  if (heroHeadline) heroHeadline.textContent = config.headline;
   if (heroDesc) heroDesc.textContent = config.heroSubtitle;
 
   // 更新網址參數 (不刷新頁面)
@@ -150,7 +142,7 @@ function renderProjects() {
     `;
   }).join('');
 
-  // 綁定卡片點擊事件 (展開 SARS 抽屜)
+  // 綁定卡片點擊事件 (展開專案深度分析抽屜)
   document.querySelectorAll('.project-card').forEach(card => {
     card.addEventListener('click', () => {
       const projId = card.dataset.projectId;
@@ -160,7 +152,7 @@ function renderProjects() {
 }
 
 /**
- * 開啟 SARS 深度抽屜
+ * 開啟專案深度分析抽屜 (Project Deep Dive Drawer)
  */
 function openProjectDrawer(projectId) {
   const proj = projects.find(p => p.id === projectId);
@@ -203,7 +195,7 @@ function openProjectDrawer(projectId) {
 }
 
 /**
- * 關閉 SARS 抽屜
+ * 關閉專案深度分析抽屜
  */
 function closeProjectDrawer() {
   drawerBackdrop.classList.remove('open');

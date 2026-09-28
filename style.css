@@ -1062,12 +1062,16 @@ body {
   background-color: #FFFFFF;
   border: 1px solid var(--border-light);
   border-radius: var(--radius-md);
-  padding: 1rem 1.25rem;
+  padding: 1.25rem 1.4rem;
   display: flex;
   align-items: flex-start;
   gap: 0.85rem;
   box-shadow: var(--shadow-sm);
   transition: var(--transition);
+}
+
+.award-card.highlight-award-card {
+  border-left: 3px solid var(--yellow-600);
 }
 
 .award-card:hover {
@@ -1089,12 +1093,20 @@ body {
   font-weight: 700;
   color: var(--yellow-800);
   font-family: var(--font-mono);
+  margin-bottom: 0.2rem;
 }
 
 .award-title {
-  font-size: 0.92rem;
-  font-weight: 600;
+  font-size: 0.98rem;
+  font-weight: 700;
   color: var(--text-primary);
+  margin-bottom: 0.3rem;
+}
+
+.award-desc {
+  font-size: 0.84rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
 }
 
 .footer {
