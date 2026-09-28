@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>黃婉綾 HUANG, WAN-LING | Medical AI × Information Systems Portfolio</title>
+  <meta name="description" content="黃婉綾個人作品集：專注於醫療 AI 臨床決策支援原型、醫療資料與知識工程、深度學習電腦視覺與生醫物聯網多源感測。">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- 頂部導覽列（整合視角切換膠囊） -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="nav-brand">
+        <span class="brand-dot"></span>
+        <span class="brand-name">黃婉綾</span>
+        <span class="brand-title">HUANG, WAN-LING</span>
+      </a>
+
+      <!-- 視角切換膠囊 (Audience Lens) -->
+      <div class="nav-lens-switcher" id="lens-switcher">
+        <button class="nav-lens-btn lens-med active" data-view="med" title="切換為醫學資訊 / 醫療 AI 視角">
+          <span>醫學資訊 / 醫療 AI</span>
+        </button>
+        <button class="nav-lens-btn lens-cs" data-view="cs" title="切換為資工 / AI / 系統開發視角">
+          <span>資工 / AI / 系統開發</span>
+        </button>
+        <button class="nav-lens-btn lens-all" data-view="all" title="切換為完整總覽視角">
+          <span>完整總覽</span>
+        </button>
+      </div>
+
+      <!-- 導覽選單 -->
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#projects" class="nav-link">專案作品</a></li>
+          <li><a href="#experience" class="nav-link">經歷實習</a></li>
+          <li><a href="#awards" class="nav-link">榮譽證照</a></li>
+          <li><a href="#skills" class="nav-link">專業技術</a></li>
+          <li><a href="#contact" class="nav-link">聯絡資訊</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero 首頁引言區塊 -->
+  <section class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-text-col">
+        <div class="hero-tag" id="hero-lens-badge">
+          <span class="hero-tag-dot"></span>
+          <span id="lens-badge-text">Medical Informatics & AI Lens</span>
+        </div>
+        <div class="hero-name-row">
+          <h1 class="hero-name">黃婉綾</h1>
+          <span class="hero-name-en">HUANG, WAN-LING</span>
+        </div>
+        <div class="hero-headline" id="hero-headline">
+          Medical AI × Data Analysis × Intelligent Systems
+        </div>
+        <p class="hero-description" id="hero-desc">
+          以臨床需求與醫療流程為核心，結合大型語言模型、資料分析與系統開發，建立實證導向之智慧醫療決策支援原型。
+        </p>
+        <div class="hero-traits">
+          <span class="trait-chip">負責</span>
+          <span class="trait-chip">努力</span>
+          <span class="trait-chip">執行力高</span>
+          <span class="trait-chip">有耐心</span>
+          <span class="trait-chip">具備領導力</span>
+        </div>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">
+            <span>檢視精選專案</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <polyline points="19 12 12 19 5 12"></polyline>
+            </svg>
+          </a>
+          <a href="#contact" class="btn-secondary">
+            <span>聯絡方式</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-card-col">
+        <div class="hero-card">
+          <div class="avatar-wrapper">
+            <img src="assets/avatar.jpg" alt="黃婉綾 個人形象照" class="avatar-img">
+          </div>
+          <div class="hero-quick-meta">
+            <div class="meta-item">
+              <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+              <span>銘傳大學 智慧醫療與永續管理學系</span>
+            </div>
+            <div class="meta-item">
+              <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
+                <polyline points="17 21 17 13 7 13 7 21"></polyline>
+                <polyline points="7 3 7 8 15 8"></polyline>
+              </svg>
+              <span>臺大醫院 資訊室 實習</span>
+            </div>
+            <div class="meta-item">
+              <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                </polygon>
+              </svg>
+              <span>多次榮獲 學院書卷獎 & 模範學生獎學金</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 四大核心能力矩陣 (Core Research & Technical Pillars) -->
+  <section class="pillars-section">
+    <div class="container">
+      <div class="pillars-grid" id="pillars-container">
+        <!-- 由 main.js 動態注入四大能力卡片 -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 專案展示區塊 -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow">
+          <span>SELECTED PROJECTS</span>
+        </div>
+        <h2 class="section-title" id="projects-section-title">專案成果與系統開發</h2>
+        <p class="section-subtitle" id="projects-section-subtitle">
+          點擊任一專案卡片，可展開完整 SARS 深度分析與系統操作截圖。
+        </p>
+      </div>
+
+      <!-- 專案卡片動態網格 -->
+      <div class="projects-grid" id="projects-container">
+        <!-- 由 main.js 依據選定視角動態渲染 -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 實習與學術歷程 (B 方案整合) -->
+  <section class="section" id="experience"
+    style="background-color: #FFFFFF; border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light);">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow">EXPERIENCE & ACADEMICS</div>
+        <h2 class="section-title">實習與學術歷程</h2>
+        <p class="section-subtitle">結合理論基礎與醫院資訊室實務經驗，具備從需求分析、系統實作到教學輔導之多元實踐歷程。</p>
+      </div>
+
+      <div class="timeline-list">
+        <!-- 臺大醫院實習 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-period">115.7 - 115.8</div>
+          <h3 class="timeline-title">臺大醫院 資訊室 實習生</h3>
+          <p class="timeline-desc">參與智慧醫療專案開發與 AI 工具導入，深入了解臨床需求與院內資訊架構：</p>
+          <ul class="timeline-bullets">
+            <li>臨床資料視覺化儀表板開發（ASP.NET Core、SQL Server、MiniExcel、Gemini API）</li>
+            <li>AI 智慧輔助工具的導入與維護</li>
+            <li>智慧醫療知識庫問答系統開發（Python、RAG、ChromaDB、E5 向量檢索）</li>
+          </ul>
+        </div>
+
+        <!-- 銘傳大學求學背景 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-period">112.9 - 迄今</div>
+          <h3 class="timeline-title">銘傳大學 智慧醫療與永續管理學系（原 醫療資訊與管理學系）</h3>
+          <p class="timeline-desc">主修醫學資訊、軟體工程與人工智慧應用，修讀核心課程：</p>
+          <ul class="timeline-bullets">
+            <li>醫療訊號處理實作、醫學資訊實驗、深度學習與應用</li>
+            <li>網頁程式設計、系統分析與設計、數位影像處理、行動裝置程式設計</li>
+          </ul>
+        </div>
+
+        <!-- 教學與領導經歷 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-period">113-1 ~ 115-1</div>
+          <h3 class="timeline-title">教學助理（TA）與班級幹部經歷</h3>
+          <ul class="timeline-bullets">
+            <li>113-1 程式設計(一) TA、113-2 程式設計(二) TA</li>
+            <li>115-1 系統分析與設計 TA、115-1 網頁程式設計 TA</li>
+            <li>113-2 ~ 115-1 擔任班代，協助班級事務協調與溝通</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 學習獎項與證照 -->
+  <section class="section" id="awards">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow">HONORS & CERTIFICATES</div>
+        <h2 class="section-title">學習獎項與專業證照</h2>
+        <p class="section-subtitle">歷年學業成績優異，多次獲頒書卷獎、優良學生與模範學生獎學金。</p>
+      </div>
+
+      <div class="awards-grid">
+        <div class="award-card">
+          <div class="award-indicator"></div>
+          <div>
+            <div class="award-sem">112-1</div>
+            <div class="award-title">健康暨醫學工程學院 書卷獎</div>
+          </div>
+        </div>
+        <div class="award-card">
+          <div class="award-indicator"></div>
+          <div>
+            <div class="award-sem">112-2</div>
+            <div class="award-title">銘傳大學創辦人李應兆優良學生獎學金</div>
+          </div>
+        </div>
+        <div class="award-card">
+          <div class="award-indicator"></div>
+          <div>
+            <div class="award-sem">113-1</div>
+            <div class="award-title">健康暨醫學工程學院 書卷獎</div>
+          </div>
+        </div>
+        <div class="award-card">
+          <div class="award-indicator"></div>
+          <div>
+            <div class="award-sem">113-1</div>
+            <div class="award-title">銘傳大學應兆優良學生獎學金</div>
+          </div>
+        </div>
+        <div class="award-card">
+          <div class="award-indicator"></div>
+          <div>
+            <div class="award-sem">113-2</div>
+            <div class="award-title">健康暨醫學工程學院 書卷獎</div>
+          </div>
+        </div>
+        <div class="award-card">
+          <div class="award-indicator"></div>
+          <div>
+            <div class="award-sem">113-2</div>
+            <div class="award-title">銘傳大學德明模範學生獎學金</div>
+          </div>
+        </div>
+        <div class="award-card">
+          <div class="award-indicator"></div>
+          <div>
+            <div class="award-sem">114-1</div>
+            <div class="award-title">銘傳大學創辦人包德明模範學生獎學金</div>
+          </div>
+        </div>
+        <div class="award-card">
+          <div class="award-indicator" style="background-color: var(--teal-600);"></div>
+          <div>
+            <div class="award-sem">專業證照</div>
+            <div class="award-title">TQC+ 基礎行動裝置應用程式設計 Android 9</div>
+          </div>
+        </div>
+        <div class="award-card">
+          <div class="award-indicator" style="background-color: var(--teal-600);"></div>
+          <div>
+            <div class="award-sem">專業證照</div>
+            <div class="award-title">TQC+ 基礎程式語言 Python 3</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 技術能力庫 (結構化分層) -->
+  <section class="section" id="skills" style="background-color: #FFFFFF; border-top: 1px solid var(--border-light);">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow">TECHNICAL SKILLS</div>
+        <h2 class="section-title">專業技術棧</h2>
+        <p class="section-subtitle">涵蓋全端軟體開發、大型語言模型與視覺 AI，以及生醫感測器整合與邊緣運算平台。</p>
+      </div>
+
+      <div class="skills-grid-container">
+        <!-- 軟體開發與 AI -->
+        <div class="skill-category-card">
+          <div class="skill-card-header">
+            <span class="skill-header-dot teal-dot"></span>
+            <h3 class="skill-card-title">軟體開發與 AI</h3>
+          </div>
+
+          <div class="skill-subgroup">
+            <h4 class="skill-subgroup-title">程式開發 (Programming & Application)</h4>
+            <div class="skill-tags-flow">
+              <span class="keyword-tag">C# / Python / JavaScript</span>
+              <span class="keyword-tag">ASP.NET Core</span>
+              <span class="keyword-tag">PyQt5 / Qt Designer</span>
+              <span class="keyword-tag">HTML / CSS / jQuery</span>
+            </div>
+          </div>
+
+          <div class="skill-subgroup">
+            <h4 class="skill-subgroup-title">AI 與資料處理 (AI & Data Processing)</h4>
+            <div class="skill-tags-flow">
+              <span class="keyword-tag">PyTorch / Ultralytics YOLO</span>
+              <span class="keyword-tag">OpenCV / NumPy</span>
+              <span class="keyword-tag">LLM API (Gemini / Local LLM)</span>
+              <span class="keyword-tag">RAG / ChromaDB / E5 Embeddings</span>
+              <span class="keyword-tag">Tesseract OCR</span>
+            </div>
+          </div>
+
+          <div class="skill-subgroup">
+            <h4 class="skill-subgroup-title">資料庫與視覺化 (Database & Visualization)</h4>
+            <div class="skill-tags-flow">
+              <span class="keyword-tag">SQL Server / SQLite</span>
+              <span class="keyword-tag">MiniExcel 串流解析</span>
+              <span class="keyword-tag">Chart.js 圖表渲染</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 生醫感測與邊緣運算 -->
+        <div class="skill-category-card">
+          <div class="skill-card-header">
+            <span class="skill-header-dot yellow-dot"></span>
+            <h3 class="skill-card-title">生醫感測與邊緣運算</h3>
+          </div>
+
+          <div class="skill-subgroup">
+            <h4 class="skill-subgroup-title">運算平台 (Computing Platform & Edge AI)</h4>
+            <div class="skill-tags-flow">
+              <span class="keyword-tag yellow-tag"><strong>Arduino Uno</strong>｜微控制器整合</span>
+              <span class="keyword-tag yellow-tag"><strong>CanMV-K230</strong>｜邊緣 AI / 影像運算</span>
+              <span class="keyword-tag yellow-tag"><strong>ESP32</strong>｜感測資料擷取與裝置控制</span>
+            </div>
+          </div>
+
+          <div class="skill-subgroup">
+            <h4 class="skill-subgroup-title">生醫與環境感測 (Biomedical & Environmental Sensing)</h4>
+            <div class="skill-tags-flow">
+              <span class="keyword-tag yellow-tag"><strong>MAX30102</strong>｜PPG 心率／血氧</span>
+              <span class="keyword-tag yellow-tag"><strong>MLX90614 DCI</strong>｜非接觸式體溫量測</span>
+              <span class="keyword-tag yellow-tag"><strong>毫米波雷達</strong>｜非接觸式呼吸／胸腔活動</span>
+              <span class="keyword-tag yellow-tag"><strong>AM2320</strong>｜環境溫濕度感測</span>
+              <span class="keyword-tag yellow-tag"><strong>VL53L1X</strong>｜距離偵測與校正</span>
+            </div>
+          </div>
+
+          <div class="skill-subgroup">
+            <h4 class="skill-subgroup-title">周邊模組 (Peripheral Modules)</h4>
+            <div class="skill-tags-flow">
+              <span class="keyword-tag yellow-tag"><strong>PN532</strong>｜NFC 加密讀寫</span>
+              <span class="keyword-tag yellow-tag"><strong>SGP30</strong>｜空氣品質／氣體感測</span>
+              <span class="keyword-tag yellow-tag"><strong>HC-05</strong>｜Bluetooth SPP 無線通訊</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 聯絡資訊與頁尾 -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-title">黃婉綾 HUANG, WAN-LING</div>
+          <p class="footer-brand-desc">
+            銘傳大學 智慧醫療與永續管理學系<br>
+            專注於智慧醫療資訊系統、大型語言模型落地應用、多模態感測物聯網與影像演算法開發。
+          </p>
+        </div>
+        <div>
+          <div class="footer-contact-title">聯絡管道</div>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>Email：12400654@me.mcu.edu.tw</span>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                </path>
+              </svg>
+              <span>電話：0971-725-609</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        &copy; 2026 黃婉綾 HUANG, WAN-LING. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- SARS 專案深度抽屜 (Drawer Modal) -->
+  <div class="drawer-backdrop" id="project-drawer" aria-hidden="true">
+    <div class="drawer-panel">
+      <div class="drawer-header">
+        <div class="drawer-header-left">
+          <span class="drawer-category-tag" id="drawer-category">實習作品</span>
+          <h2 class="drawer-title" id="drawer-title">專案名稱</h2>
+          <div class="drawer-meta-info" id="drawer-meta">單位 ｜ 學期</div>
+          <div class="drawer-tech-tags" id="drawer-tech-tags"></div>
+        </div>
+        <button class="drawer-close-btn" id="drawer-close-btn" aria-label="關閉專案詳情">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="drawer-body">
+        <!-- SARS 深度解析 -->
+        <div class="sars-grid">
+          <div class="sars-block situation-block">
+            <div class="sars-label">
+              <span>SITUATION ｜ 背景與痛點</span>
+            </div>
+            <div class="sars-text" id="drawer-situation"></div>
+          </div>
+
+          <div class="sars-block action-block">
+            <div class="sars-label">
+              <span>ACTION ｜ 架構決策與實作</span>
+            </div>
+            <div class="sars-text" id="drawer-action"></div>
+          </div>
+
+          <div class="sars-block result-block">
+            <div class="sars-label">
+              <span>RESULT ｜ 成果與效益</span>
+            </div>
+            <div class="sars-text" id="drawer-result"></div>
+          </div>
+
+          <div class="sars-block summary-block">
+            <div class="sars-label">
+              <span>SUMMARY ｜ 技術覆盤與未來展望</span>
+            </div>
+            <div class="sars-text" id="drawer-summary"></div>
+          </div>
+        </div>
+
+        <!-- 專案截圖畫廊 -->
+        <div class="drawer-gallery">
+          <h3 class="gallery-title">專案系統截圖與架構展示</h3>
+          <div id="drawer-gallery-container">
+            <!-- 圖片由 JS 動態注入 -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="main.js"></script>
+</body>
+
+</html>
