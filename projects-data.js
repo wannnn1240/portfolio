@@ -249,8 +249,8 @@ export const projects = [
     unit: "課程：醫療訊號處理實作",
     techStack: ["Arduino Uno", "C#", "MAX30102", "Gravity PN532 NFC", "DFRobot LUX V30B", "Grove 超音波", "SGP30", "HC-05 藍牙 SPP"],
     images: [
-      { src: "assets/projects/biosignal_hardware1.png", caption: "MAX30102 心率血氧採集與 Gravity PN532 NFC 讀寫模組" },
-      { src: "assets/projects/biosignal_hardware2.png", caption: "生醫訊號感測器整合硬體配置圖（Arduino Uno、PPG、NFC、藍牙、多維感測）" },
+      { src: "assets/projects/biosignal_hardware1.jpg", caption: "MAX30102 心率血氧採集與 Gravity PN532 NFC 讀寫模組" },
+      { src: "assets/projects/biosignal_hardware2.jpg", caption: "生醫訊號感測器整合硬體配置圖（Arduino Uno、PPG、NFC、藍牙、多維感測）" },
       { src: "assets/projects/biosignal_game1.png", caption: "即時 PPG 脈搏波形渲染與 NFC 卡片寫入介面" },
       { src: "assets/projects/biosignal_game2.png", caption: "生醫訊號互動遊戲畫面：CO2 能量累積、光感加速與超音波跳躍" }
     ],
