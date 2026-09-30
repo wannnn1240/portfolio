@@ -11,7 +11,7 @@ export const personalInfo = {
   contact: {
     email: "12400654@me.mcu.edu.tw",
     phone: "0971-725-609",
-    avatar: "assets/avatar.jpg"
+    avatar: "assets/avatar.webp"
   },
   education: {
     school: "銘傳大學",
@@ -125,9 +125,9 @@ export const projects = [
     unit: "臺大醫院 資訊室",
     techStack: ["C#", "ASP.NET Core", "JavaScript", "HTML/CSS", "SQL Server", "Google Gemini", "Local LLM API", "MiniExcel", "Chart.js"],
     images: [
-      { src: "assets/projects/clinical_dashboard.png", caption: "三級風險分流互動儀表板與 AI 智慧自適應配置介面" },
-      { src: "assets/projects/clinical_charts1.png", caption: "單一病人傷口狀況折線圖追蹤" },
-      { src: "assets/projects/clinical_charts2.png", caption: "病患入院後轉床甘特圖動態視覺化" }
+      { src: "assets/projects/clinical_dashboard.webp", caption: "三級風險分流互動儀表板與 AI 智慧自適應配置介面" },
+      { src: "assets/projects/clinical_charts1.webp", caption: "單一病人傷口狀況折線圖追蹤" },
+      { src: "assets/projects/clinical_charts2.webp", caption: "病患入院後轉床甘特圖動態視覺化" }
     ],
     perspectives: {
       med: {
@@ -157,8 +157,8 @@ export const projects = [
     unit: "臺大醫院 資訊室",
     techStack: ["Python", "C#", "JavaScript", "RAG", "Google Gemini API", "Multilingual-E5", "ChromaDB", "SQLite", "ASP.NET Core", "PyQt5", "BeautifulSoup4"],
     images: [
-      { src: "assets/projects/rag_qa_system.png", caption: "智慧醫療知識庫問答系統：問答解析、來源指引標註與衛教單匯出" },
-      { src: "assets/projects/rag_etl_pipeline.png", caption: "全自動化知識庫管理與資料萃取管線（網址爬蟲、PDF 解析、分段向量化）" }
+      { src: "assets/projects/rag_qa_system.webp", caption: "智慧醫療知識庫問答系統：問答解析、來源指引標註與衛教單匯出" },
+      { src: "assets/projects/rag_etl_pipeline.webp", caption: "全自動化知識庫管理與資料萃取管線（網址爬蟲、PDF 解析、分段向量化）" }
     ],
     perspectives: {
       med: {
@@ -188,7 +188,7 @@ export const projects = [
     unit: "智慧醫療研究計畫",
     techStack: ["Python", "PyTorch", "OpenCV", "C#", "ESP32", "CanMV-K230", "MLX90614 DCI", "VL53L1X", "AM2320", "毫米波雷達", "LINE Bot API"],
     images: [
-      { src: "assets/projects/health_iot_arch.jpg", caption: "非接觸式健康預警與自動化管理系統架構圖與異常警示流程" }
+      { src: "assets/projects/health_iot_arch.webp", caption: "非接觸式健康預警與自動化管理系統架構圖與異常警示流程" }
     ],
     perspectives: {
       med: {
@@ -218,8 +218,8 @@ export const projects = [
     unit: "課程：數位影像處理",
     techStack: ["Python", "PyQt5", "Qt Designer", "OpenCV", "NumPy", "PyTesseract (Tesseract OCR)"],
     images: [
-      { src: "assets/projects/dewarp_ocr_compare.png", caption: "8 點交互式控制框雙線性拉平校正前後對比與三種影像優化輸出" },
-      { src: "assets/projects/dewarp_ocr_ui.png", caption: "全頁與局部自由框選 OCR 文字辨識操作介面" }
+      { src: "assets/projects/dewarp_ocr_compare.webp", caption: "8 點交互式控制框雙線性拉平校正前後對比與三種影像優化輸出" },
+      { src: "assets/projects/dewarp_ocr_ui.webp", caption: "全頁與局部自由框選 OCR 文字辨識操作介面" }
     ],
     perspectives: {
       med: {
@@ -249,10 +249,10 @@ export const projects = [
     unit: "課程：醫療訊號處理實作",
     techStack: ["Arduino Uno", "C#", "MAX30102", "Gravity PN532 NFC", "DFRobot LUX V30B", "Grove 超音波", "SGP30", "HC-05 藍牙 SPP"],
     images: [
-      { src: "assets/projects/biosignal_hardware1.jpg", caption: "MAX30102 心率血氧採集與 Gravity PN532 NFC 讀寫模組" },
-      { src: "assets/projects/biosignal_hardware2.jpg", caption: "生醫訊號感測器整合硬體配置圖（Arduino Uno、PPG、NFC、藍牙、多維感測）" },
-      { src: "assets/projects/biosignal_game1.png", caption: "即時 PPG 脈搏波形渲染與 NFC 卡片寫入介面" },
-      { src: "assets/projects/biosignal_game2.png", caption: "生醫訊號互動遊戲畫面：CO2 能量累積、光感加速與超音波跳躍" }
+      { src: "assets/projects/biosignal_hardware1.webp", caption: "MAX30102 心率血氧採集與 Gravity PN532 NFC 讀寫模組" },
+      { src: "assets/projects/biosignal_hardware2.webp", caption: "生醫訊號感測器整合硬體配置圖（Arduino Uno、PPG、NFC、藍牙、多維感測）" },
+      { src: "assets/projects/biosignal_game1.webp", caption: "即時 PPG 脈搏波形渲染與 NFC 卡片寫入介面" },
+      { src: "assets/projects/biosignal_game2.webp", caption: "生醫訊號互動遊戲畫面：CO2 能量累積、光感加速與超音波跳躍" }
     ],
     perspectives: {
       med: {
@@ -282,7 +282,7 @@ export const projects = [
     unit: "課程：簡介深度學習",
     techStack: ["Python", "PyQt5", "Qt Designer", "Ultralytics YOLO", "OpenCV", "NumPy", "JSON"],
     images: [
-      { src: "assets/projects/xpark_yolo.png", caption: "Xpark 生物影像辨識、物種資料對應與樓層圖鑑收藏手冊介面" }
+      { src: "assets/projects/xpark_yolo.webp", caption: "Xpark 生物影像辨識、物種資料對應與樓層圖鑑收藏手冊介面" }
     ],
     perspectives: {
       med: {
@@ -312,8 +312,8 @@ export const projects = [
     unit: "課外實作專案",
     techStack: ["ASP.NET", "HTML", "CSS", "JavaScript", "jQuery UI"],
     images: [
-      { src: "assets/projects/culture_ticket1.png", caption: "單頁應用（SPA）售票系統與即時動態金額計算" },
-      { src: "assets/projects/culture_ticket2.png", caption: "拖放互動投票系統（Draggable & Droppable）與熱門活動排行" }
+      { src: "assets/projects/culture_ticket1.webp", caption: "單頁應用（SPA）售票系統與即時動態金額計算" },
+      { src: "assets/projects/culture_ticket2.webp", caption: "拖放互動投票系統（Draggable & Droppable）與熱門活動排行" }
     ],
     perspectives: {
       med: {

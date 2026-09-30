@@ -106,7 +106,7 @@ function renderProjects() {
       ? proj.perspectives.cs 
       : proj.perspectives.med;
 
-    const thumbnail = proj.images && proj.images.length > 0 ? proj.images[0].src : 'assets/avatar.jpg';
+    const thumbnail = proj.images && proj.images.length > 0 ? proj.images[0].src : 'assets/avatar.webp';
     const keywordsHtml = pData.keywords.map((kw, idx) => `
       <span class="keyword-tag ${idx % 2 === 1 ? 'yellow-tag' : ''}">${kw}</span>
     `).join('');
@@ -117,7 +117,7 @@ function renderProjects() {
       <article class="project-card" data-project-id="${proj.id}">
         <div class="project-card-badge">${proj.category}</div>
         <div class="project-thumbnail-wrapper">
-          <img src="${thumbnail}" alt="${pData.title}" class="project-thumbnail" loading="lazy">
+          <img src="${thumbnail}" alt="${pData.title}" class="project-thumbnail" loading="lazy" decoding="async">
         </div>
         <div class="project-content">
           <div class="project-unit-period">
@@ -181,7 +181,7 @@ function openProjectDrawer(projectId) {
   if (proj.images && proj.images.length > 0) {
     drawerGallery.innerHTML = proj.images.map(img => `
       <div class="gallery-item">
-        <img src="${img.src}" alt="${img.caption}" class="gallery-img" loading="lazy">
+        <img src="${img.src}" alt="${img.caption}" class="gallery-img" loading="lazy" decoding="async">
         <div class="gallery-caption">${img.caption}</div>
       </div>
     `).join('');
